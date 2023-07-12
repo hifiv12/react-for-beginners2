@@ -207,6 +207,15 @@
       + App.js에 있는 :id에 매치가 되는 id값을 넘겨주어 url에 표시 
 
 - publishing
+  * git add . 
+  * github repository remote and push 
   * npm i gh-pages
   * react-script build -> 만든 웹사이트의 production ready code를 생성
     + production ready -> 코드가 압축 및 최적화
+  * package.json 
+    + 최하단 homepage": "id.github.io/repository"
+    + script
+      - "deploy": "gh-pages -d build",
+      - "predeploy": "npm run build"
+  * npm run deploy -> 자동으로 build and optimize and deploy
+  
